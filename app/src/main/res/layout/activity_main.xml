@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/activity_main_period_radiogroup">
+
+        <RadioButton
+            android:id="@+id/period1dRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1Day" />
+
+        <RadioButton
+            android:id="@+id/period10dRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10days" />
+
+        <RadioButton
+            android:id="@+id/period30dRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30Days" />
+
+        <RadioButton
+            android:id="@+id/period90dRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90Days" />
+
+        <RadioButton
+            android:id="@+id/period12mRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12M" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search"
+        app:backgroundTint="#8BC34A" />
+
+    <com.anychart.AnyChartView
+        android:id="@+id/stockChartAnyChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.anychart.AnyChartView>
+
+</LinearLayout>
